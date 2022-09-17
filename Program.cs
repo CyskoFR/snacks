@@ -1,129 +1,129 @@
-﻿////Snack1.
-////L'utente inserisce due numeri in successione. Il software stampa il maggiore.
+﻿//Snack1.
+//L'utente inserisce due numeri in successione. Il software stampa il maggiore.
 
-//Console.WriteLine("Inserisci il primo numero");
+Console.WriteLine("Inserisci il primo numero");
 
-//int firstNumber = Convert.ToInt32(Console.ReadLine());
+int firstNumber = Convert.ToInt32(Console.ReadLine());
 
-//Console.WriteLine("Inserisci il secondo numero");
+Console.WriteLine("Inserisci il secondo numero");
 
-//int secondNumber = Convert.ToInt32(Console.ReadLine());
+int secondNumber = Convert.ToInt32(Console.ReadLine());
 
-//if (firstNumber > secondNumber)
-//{
-//    Console.WriteLine($"Il numero maggiore é {firstNumber}");
-//}
-//else
-//{
-//    Console.WriteLine($"Il numero maggiore é {secondNumber}");
-//}
-//// v2
-//int maxNum = firstNumber > secondNumber ? firstNumber : secondNumber;
-//Console.WriteLine(maxNum);
-
-
-////Snack2.
-////L'utente inserisce due parole in successione. Il software stampa prima la parola piú corta, poi la piú lunga.
-
-//Console.WriteLine("Inserisci la prima parola");
-
-//string firstWord = Console.ReadLine();
-
-//Console.WriteLine("Inserisci la seconda parola");
-
-//string secondWord = Console.ReadLine();
-
-//if (firstWord.Length > secondWord.Length)
-//{
-//    Console.WriteLine($"La parola piú corta é {secondWord}");
-//    Console.WriteLine($"La parola piú lunga é {firstWord}");
-//}
-//else if (firstWord.Length < secondWord.Length)
-//{
-//    Console.WriteLine($"La parola piú corta é {firstWord}");
-//    Console.WriteLine($"La parola piú lunga é {secondWord}");
-//}
-//else
-//{
-//    Console.WriteLine("Le parole hanno lunghezza uguale");
-//}
+if (firstNumber > secondNumber)
+{
+    Console.WriteLine($"Il numero maggiore é {firstNumber}");
+}
+else
+{
+    Console.WriteLine($"Il numero maggiore é {secondNumber}");
+}
+// v2
+int maxNum = firstNumber > secondNumber ? firstNumber : secondNumber;
+Console.WriteLine(maxNum);
 
 
-////Snack3.
-////Il software deve chiedere per 10 volte all'utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti.
+//Snack2.
+//L'utente inserisce due parole in successione. Il software stampa prima la parola piú corta, poi la piú lunga.
 
-//int sum = 0;
+Console.WriteLine("Inserisci la prima parola");
 
-//for (int i = 0; i < 10; i++)
-//{
-//    Console.WriteLine($"Inserisci un numero (.{i + 1})");
-//    sum += Convert.ToInt32(Console.ReadLine());
-//}
-//Console.WriteLine($"La somma dei tuoi numeri é {sum}");
+string string1 = Console.ReadLine();
 
+Console.WriteLine("Inserisci la seconda parola");
 
-////Snack4.
-////Calcola la somma e la media dei numeri da 2 a 10.
+string string2 = Console.ReadLine();
 
-//Console.WriteLine("Calcolo la somma e la media dei numeri da 2 a 10");
-
-//int[] arrayOfNumbers = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-
-//int sum2 = 0;
-
-//for (int i = 0; i < arrayOfNumbers.Length; i++)
-//{
-//    sum2 += arrayOfNumbers[i];
-//}
-//Console.WriteLine($"La somma dei numeri é {sum2}");
-//Console.WriteLine($"La media dei numeri é {sum2 / arrayOfNumbers.Length}");
+if (string1.Length > string2.Length)
+{
+    Console.WriteLine($"La parola piú corta é {string2}");
+    Console.WriteLine($"La parola piú lunga é {string1}");
+}
+else if (string1.Length < string2.Length)
+{
+    Console.WriteLine($"La parola piú corta é {string1}");
+    Console.WriteLine($"La parola piú lunga é {string2}");
+}
+else
+{
+    Console.WriteLine("Le parole hanno lunghezza uguale");
+}
 
 
-////Snack5.
-////Il software chiede all'utente di inserire un numero. Se il numero inserito e pari, stampa il numero, se dispari, stampa il numero successivo.
+//Snack3.
+//Il software deve chiedere per 10 volte all'utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti.
 
-//Console.WriteLine("Inserisci un numero");
+int sum = 0;
 
-//int userNumber = Convert.ToInt32(Console.ReadLine());
-
-//if (userNumber % 2 == 0)
-//{
-//    Console.WriteLine($"Hai inserito un numero pari: {userNumber}");
-//}
-//else
-//{
-//    Console.WriteLine($"Hai inserito un numero dispari({userNumber}). Il suo successivo é: {userNumber + 1}");
-//}
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine($"Inserisci un numero (.{i + 1})");
+    sum += Convert.ToInt32(Console.ReadLine());
+}
+Console.WriteLine($"La somma dei tuoi numeri é {sum}");
 
 
-////Snack6.
-////In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby. Chiedi all'utente il suo nome e comunicagli se puó partecipare o meno alla festa.
+//Snack4.
+//Calcola la somma e la media dei numeri da 2 a 10.
 
-//string[] guestsList = { "mario", "francesco", "dario", "luca", "gigi", "maria", "anna" };
+Console.WriteLine("Calcolo la somma e la media dei numeri da 2 a 10");
 
-//Console.WriteLine("Il suo nome, prego...");
+int[] arrayOfNumbers = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-//string guestName = Console.ReadLine().ToLower();
+int sum2 = 0;
 
-//bool status = false;
+for (int i = 0; i < arrayOfNumbers.Length; i++)
+{
+    sum2 += arrayOfNumbers[i];
+}
+Console.WriteLine($"La somma dei numeri é {sum2}");
+Console.WriteLine($"La media dei numeri é {sum2 / arrayOfNumbers.Length}");
 
-//foreach (string guest in guestsList)
-//{
-//    if (guestName == guest)
-//    {
-//        status = true;
-//        break;
-//    }
-//}
 
-//if (status)
-//{
-//    Console.WriteLine("Prego, puó entrare.");
-//}
-//else
-//{
-//    Console.WriteLine("Mi discpiace, non é in lista.");
-//}
+//Snack5.
+//Il software chiede all'utente di inserire un numero. Se il numero inserito e pari, stampa il numero, se dispari, stampa il numero successivo.
+
+Console.WriteLine("Inserisci un numero");
+
+int number = Convert.ToInt32(Console.ReadLine());
+
+if (number % 2 == 0)
+{
+    Console.WriteLine($"Hai inserito un numero pari: {number}");
+}
+else
+{
+    Console.WriteLine($"Hai inserito un numero dispari({number}). Il suo successivo é: {number + 1}");
+}
+
+
+//Snack6.
+//In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby. Chiedi all'utente il suo nome e comunicagli se puó partecipare o meno alla festa.
+
+string[] guestsList = { "mario", "francesco", "dario", "luca", "gigi", "maria", "anna" };
+
+Console.WriteLine("Il suo nome, prego...");
+
+string guestName = Console.ReadLine().ToLower();
+
+bool status = false;
+
+foreach (string guest in guestsList)
+{
+    if (guestName == guest)
+    {
+        status = true;
+        break;
+    }
+}
+
+if (status)
+{
+    Console.WriteLine("Prego, puó entrare.");
+}
+else
+{
+    Console.WriteLine("Mi discpiace, non é in lista.");
+}
 
 
 //Snack7.
@@ -165,22 +165,20 @@ Console.WriteLine($"La somma degli elementi in posizione dispari é {oddSum}");
 //Snack9.
 //Crea un array vuoto e chiedi all'utente un numero da inserire nall'array. Continua a chiedere i numeri all'utente e ad inserirli nell'array fino a quando la somma degli elementi é minore di 50.
 
-int[] infArray = new int[50];
+//int[] infArray = new int[50];
 
-int sum = 0;
+//int sum = 0;
 
-int index2 = 0;
+//int index2 = 0;
 
-Console.WriteLine("Inserisci un numero");
+//Console.WriteLine("Inserisci un numero");
 
-int userNumber2 = Convert.ToInt32(Console.ReadLine());
+//int userNumber2 = Convert.ToInt32(Console.ReadLine());
 
-while(sum < 50)
-{
+//while(sum < 50)
+//{
 
-}
-
- 
+//}
 
 
 //Snack10.
@@ -205,3 +203,59 @@ for (int i = 0; i < N; i++)
     }
 }
 
+
+//Snack11.
+//Dare la possibilitá di inserire due parole. Verificare tramite una funzione che le due parole abbiano la stessa lunghezza. Se hanno la stessa lunghezza, stamparle entrambe, altrimenti stampare la piú lunga delle due.
+
+Console.WriteLine("Inserisci la prima parola");
+
+string word1 = Console.ReadLine();
+
+Console.WriteLine("Inserisci la seconda parola");
+
+string word2 = Console.ReadLine();
+
+void VerifyAndStamp(string string1, string string2)
+{
+    if (string1.Length == string2.Length)
+    {
+        Console.WriteLine("Le parole hanno stessa lunghezza.");
+        Console.WriteLine($"Prima parola: {string1}");
+        Console.WriteLine($"Seconda parola: {string2}");
+    }
+    else
+    {
+        if (string1.Length > string2.Length)
+        {
+            Console.WriteLine($"La parola piú lunga é {string1}");
+        }
+        else
+        {
+            Console.WriteLine($"La parola piú lunga é {string2}");
+        }
+    }
+}
+
+VerifyAndStamp(word1, word2);
+
+
+//Snack12.
+//Scrivere una funzione per verificare se un numero é pari o dispari. Quindi chiedere un numero all'utente e comunicargli se é pari o dispari.
+
+Console.WriteLine("Inserisci un numero");
+
+int userNumberInput = Convert.ToInt32(Console.ReadLine());
+
+void VerifyNumber(int number)
+{
+    if (number % 2 == 0)
+    {
+        Console.WriteLine($"Hai inserito un numero pari: {number}");
+    }
+    else
+    {
+        Console.WriteLine($"Hai inserito un numero dispari({number}). Il suo successivo é: {number + 1}");
+    }
+}
+
+VerifyNumber(userNumberInput);
