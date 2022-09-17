@@ -254,7 +254,7 @@ void VerifyNumber(int number)
     }
     else
     {
-        Console.WriteLine($"Hai inserito un numero dispari({number}). Il suo successivo é: {number + 1}");
+        Console.WriteLine($"Hai inserito un numero dispari: ({number})");
     }
 }
 
